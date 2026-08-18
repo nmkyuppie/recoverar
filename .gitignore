@@ -1,0 +1,37 @@
+# Rust compilation targets
+/target/
+**/*.rs.bk
+*.pdb
+
+# Executables and build artifacts
+*.exe
+recovery-suite.exe
+recovery-suite-v2.exe
+
+# Disk images, logs, and recovery outputs
+*.img
+*.raw
+*.dd
+*.map
+carved_files/
+carved_usb/
+demo_carved_files/
+demo_extracted_files/
+recovered_ntfs_files/
+recovery.map
+demo_test_disk.img
+demo_rescued_image.raw
+demo_rescued.map
+
+# IDE and OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store
+
+# Brain and scratch files
+.system_generated/

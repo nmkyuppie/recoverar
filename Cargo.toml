@@ -1,0 +1,16 @@
+[workspace]
+members = [
+    "crates/recovery_core",
+    "crates/disk_io",
+    "crates/partition_analyzer",
+    "crates/ntfs_engine",
+    "crates/carver",
+    "crates/recovery_cli",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Antigravity Storage Forensics Team"]
+license = "MIT"

@@ -1,0 +1,23 @@
+[package]
+name = "disk_io"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+recovery_core = { path = "../recovery_core" }
+thiserror = "1.0"
+byteorder = "1.5"
+indicatif = "0.17"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.52", features = [
+    "Win32_Foundation",
+    "Win32_Storage_FileSystem",
+    "Win32_System_IO",
+    "Win32_Security"
+] }
+
+[dev-dependencies]
+tempfile = "3.8"

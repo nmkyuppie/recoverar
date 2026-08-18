@@ -1,0 +1,22 @@
+[package]
+name = "recovery_cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "recoverar"
+path = "src/main.rs"
+
+[dependencies]
+recovery_core = { path = "../recovery_core" }
+disk_io = { path = "../disk_io" }
+partition_analyzer = { path = "../partition_analyzer" }
+ntfs_engine = { path = "../ntfs_engine" }
+carver = { path = "../carver" }
+
+clap = { version = "4.4", features = ["derive"] }
+colored = "2.1"
+indicatif = "0.17"
+crc32fast = "1.3"
