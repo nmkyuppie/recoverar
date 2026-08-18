@@ -48,7 +48,7 @@ Clone the repository and compile the optimized release binary:
 
 ```powershell
 # 1. Clone repository
-git clone https://github.com/your-username/recoverar.git
+git clone https://github.com/nmkyuppie/recoverar.git
 cd recoverar
 
 # 2. Build optimized release binary
